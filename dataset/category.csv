@@ -1,0 +1,676 @@
+category_id|category|
+1|22-Minute Meals|
+2|30 Days of Groceries|
+3|3-Ingredient Recipes|
+4|Advance Prep Required|
+5|Alabama|
+6|Alaska|
+7|Alcoholic|
+8|Almond|
+9|Amaretto|
+10|Anchovy|
+11|Anise|
+12|Anniversary|
+13|Anthony Bourdain|
+14|Aperitif|
+15|Appetizer|
+16|Apple|
+17|Apple Juice|
+18|Apricot|
+19|Arizona|
+20|Artichoke|
+21|Arugula|
+22|Asian Pear|
+23|Asparagus|
+24|Aspen|
+25|Atlanta|
+26|Australia|
+27|Avocado|
+28|Back to School|
+29|Backyard BBQ|
+30|Bacon|
+31|Bake|
+32|Banana|
+33|Barley|
+34|Basil|
+35|Bass|
+36|Bastille Day|
+37|Bean|
+38|Beef|
+39|Beef Rib|
+40|Beef Shank|
+41|Beef Tenderloin|
+42|Beer|
+43|Beet|
+44|Bell Pepper|
+45|Berry|
+46|Beverly Hills|
+47|Birthday|
+48|Biscuit|
+49|Bitters|
+50|Blackberry|
+51|Blender|
+52|Blueberry|
+53|Blue Cheese|
+54|Boil|
+55|Bok Choy|
+56|Bon Appetit|
+57|Bon Apptit|
+58|Boston|
+59|Bourbon|
+60|Braise|
+61|Bran|
+62|Brandy|
+63|Bread|
+64|Breadcrumbs|
+65|Breakfast|
+66|Brie|
+67|Brine|
+68|Brisket|
+69|Broccoli|
+70|Broccoli Rabe|
+71|Broil|
+72|Brooklyn|
+73|Brownie|
+74|Brown Rice|
+75|Brunch|
+76|Brussel Sprout|
+77|Buffalo|
+78|Buffet|
+79|Bulgaria|
+80|Bulgur|
+81|Burrito|
+82|Butter|
+83|Buttermilk|
+84|Butternut Squash|
+85|Butterscotch/Caramel|
+86|Cabbage|
+87|Cake|
+88|#CAKEWEEK|
+89|California|
+90|Calvados|
+91|Cambridge|
+92|Campari|
+93|Camping|
+94|Canada|
+95|Candy|
+96|Candy Thermometer|
+97|Cantaloupe|
+98|Capers|
+99|Caraway|
+100|Cardamom|
+101|Carrot|
+102|Cashew|
+103|Casserole/Gratin|
+104|category|
+105|Cauliflower|
+106|Caviar|
+107|Celery|
+108|Chambord|
+109|Champagne|
+110|Chard|
+111|Chartreuse|
+112|Cheddar|
+113|Cheese|
+114|Cherry|
+115|Chestnut|
+116|Chicago|
+117|Chicken|
+118|Chickpea|
+119|Chile|
+120|Chile Pepper|
+121|Chili|
+122|Chill|
+123|Chive|
+124|Chocolate|
+125|Christmas|
+126|Christmas Eve|
+127|Cilantro|
+128|Cinco de Mayo|
+129|Cinnamon|
+130|Citrus|
+131|Clam|
+132|Clove|
+133|Cobbler/Crumble|
+134|Cocktail|
+135|Cocktail Party|
+136|Coconut|
+137|Cod|
+138|Coffee|
+139|Coffee Grinder|
+140|Cognac/Armagnac|
+141|Collard Greens|
+142|Colorado|
+143|Columbus|
+144|Condiment|
+145|Condiment/Spread|
+146|Connecticut|
+147|Cookbook Critic|
+148|cookbooks|
+149|Cookie|
+150|Cookies|
+151|Cook Like a Diner|
+152|Coriander|
+153|Corn|
+154|Cornmeal|
+155|Costa Mesa|
+156|Cottage Cheese|
+157|Couscous|
+158|Crab|
+159|Cranberry|
+160|Cranberry Sauce|
+161|Cream Cheese|
+162|Creme de Cacao|
+163|Crepe|
+164|Crme de Cacao|
+165|Cuba|
+166|Cucumber|
+167|Cumin|
+168|Cupcake|
+169|Currant|
+170|Curry|
+171|Custard|
+172|Dairy|
+173|Dairy Free|
+174|Dallas|
+175|Date|
+176|Deep-Fry|
+177|Denver|
+178|Dessert|
+179|Digestif|
+180|Dill|
+181|Dinner|
+182|Dip|
+183|Diwali|
+184|Dominican Republic|
+185|Dorie Greenspan|
+186|Double Boiler|
+187|Dried Fruit|
+188|Drink|
+189|Drinks|
+190|Duck|
+191|Easter|
+192|Eau de Vie|
+193|Edible Gift|
+194|Egg|
+195|Egg Nog|
+196|Eggplant|
+197|Egypt|
+198|Emeril Lagasse|
+199|Endive|
+200|Engagement Party|
+201|England|
+202|Entertaining|
+203|Epi Loves the Microwave|
+204|Epi + USHG|
+205|Escarole|
+206|Fall|
+207|Family Reunion|
+208|Fat Free|
+209|Father's Day|
+210|Fennel|
+211|Feta|
+212|Fig|
+213|Fish|
+214|Flaming Hot Summer|
+215|Flat Bread|
+216|Florida|
+217|Fontina|
+218|Food Processor|
+219|Fortified Wine|
+220|Fourth of July|
+221|France|
+222|Frangelico|
+223|Frankenrecipe|
+224|Freeze/Chill|
+225|Freezer Food|
+226|Friendsgiving|
+227|Frittata|
+228|Fritter|
+229|Frozen Dessert|
+230|Fruit|
+231|Fruit Juice|
+232|Fry|
+233|Game|
+234|Garlic|
+235|Georgia|
+236|Germany|
+237|Gin|
+238|Ginger|
+239|Goat Cheese|
+240|Goose|
+241|Gouda|
+242|Gourmet|
+243|Graduation|
+244|Grains|
+245|Grand Marnier|
+246|Granola|
+247|Grape|
+248|Grapefruit|
+249|Grappa|
+250|Green Bean|
+251|Green Onion/Scallion|
+252|Grill|
+253|Grill/Barbecue|
+254|Ground Beef|
+255|Ground Lamb|
+256|Guam|
+257|Guava|
+258|Haiti|
+259|Halibut|
+260|Halloween|
+261|Ham|
+262|Hamburger|
+263|Hanukkah|
+264|HarperCollins|
+265|Hawaii|
+266|Hazelnut|
+267|Healdsburg|
+268|Healthy|
+269|Herb|
+270|High Fiber|
+271|Hollywood|
+272|Hominy/Cornmeal/Masa|
+273|Honey|
+274|Honeydew|
+275|Hors D'Oeuvre|
+276|Horseradish|
+277|Hot Drink|
+278|Hot Pepper|
+279|House Cocktail|
+280|House & Garden|
+281|Houston|
+282|Hummus|
+283|Ice Cream|
+284|Ice Cream Machine|
+285|Iced Coffee|
+286|Iced Tea|
+287|Idaho|
+288|Illinois|
+289|Indiana|
+290|Iowa|
+291|Ireland|
+292|Israel|
+293|Italy|
+294|Jalapeno|
+295|Jamaica|
+296|Jam or Jelly|
+297|Japan|
+298|Jerusalem Artichoke|
+299|Jicama|
+300|Juicer|
+301|Kahlua|
+302|Kale|
+303|Kansas|
+304|Kansas City|
+305|Kentucky|
+306|Kentucky Derby|
+307|Kid-Friendly|
+308|Kidney Friendly|
+309|Kirsch|
+310|Kitchen Olympics|
+311|Kiwi|
+312|Kosher|
+313|Kosher for Passover|
+314|Kumquat|
+315|Kwanzaa|
+316|Labor Day|
+317|Lamb|
+318|Lamb Chop|
+319|Lamb Shank|
+320|Lancaster|
+321|Lasagna|
+322|Las Vegas|
+323|Leafy Green|
+324|Leek|
+325|leftovers|
+326|Legume|
+327|Lemon|
+328|Lemongrass|
+329|Lemon Juice|
+330|Lentil|
+331|Lettuce|
+332|Lima Bean|
+333|Lime|
+334|Lime Juice|
+335|Lingonberry|
+336|Liqueur|
+337|Lobster|
+338|London|
+339|Long Beach|
+340|Los Angeles|
+341|Louisiana|
+342|Louisville|
+343|Low Cal|
+344|Low Carb|
+345|Low Cholesterol|
+346|Low Fat|
+347|Low/No Sugar|
+348|Low Sodium|
+349|Low Sugar|
+350|Lunar New Year|
+351|Lunch|
+352|Lychee|
+353|Macadamia Nut|
+354|Macaroni and Cheese|
+355|Maine|
+356|Mandoline|
+357|Mango|
+358|Maple Syrup|
+359|Mardi Gras|
+360|Margarita|
+361|Marinade|
+362|Marinate|
+363|Marsala|
+364|Marscarpone|
+365|Marshmallow|
+366|Martini|
+367|Maryland|
+368|Massachusetts|
+369|Mayonnaise|
+370|Meat|
+371|Meatball|
+372|Meatloaf|
+373|Melon|
+374|Mexico|
+375|Mezcal|
+376|Miami|
+377|Michigan|
+378|Microwave|
+379|Midori|
+380|Milk/Cream|
+381|Minneapolis|
+382|Minnesota|
+383|Mint|
+384|Mississippi|
+385|Missouri|
+386|Mixer|
+387|Molasses|
+388|Monterey Jack|
+389|Mortar and Pestle|
+390|Mother's Day|
+391|Mozzarella|
+392|Muffin|
+393|Mushroom|
+394|Mussel|
+395|Mustard|
+396|Mustard Greens|
+397|Nancy Silverton|
+398|Nebraska|
+399|Nectarine|
+400|New Hampshire|
+401|New Jersey|
+402|New Mexico|
+403|New Orleans|
+404|New Year's Day|
+405|New Year's Eve|
+406|New York|
+407|No-Cook|
+408|No Meat, No Problem|
+409|Non-Alcoholic|
+410|Noodle|
+411|North Carolina|
+412|No Sugar Added|
+413|Nut|
+414|Nutmeg|
+415|Oat|
+416|Oatmeal|
+417|Octopus|
+418|Ohio|
+419|Oklahoma|
+420|Okra|
+421|Oktoberfest|
+422|Olive|
+423|Omelet|
+424|One-Pot Meal|
+425|Onion|
+426|Orange|
+427|Orange Juice|
+428|Oregano|
+429|Oregon|
+430|Organic|
+431|Orzo|
+432|Oscars|
+433|Oyster|
+434|Pacific Palisades|
+435|Paleo|
+436|Pancake|
+437|Pan-Fry|
+438|Papaya|
+439|Paprika|
+440|Parade|
+441|Paris|
+442|Parmesan|
+443|Parsley|
+444|Parsnip|
+445|Party|
+446|Pasadena|
+447|Passion Fruit|
+448|Passover|
+449|Pasta|
+450|Pasta Maker|
+451|Pastry|
+452|Pea|
+453|Peach|
+454|Peanut|
+455|Peanut Butter|
+456|Peanut Free|
+457|Pear|
+458|Pecan|
+459|Pennsylvania|
+460|Pepper|
+461|Pernod|
+462|Persian New Year|
+463|Persimmon|
+464|Peru|
+465|Pescatarian|
+466|Philippines|
+467|Phyllo/Puff Pastry Dough|
+468|Pickles|
+469|Picnic|
+470|Pie|
+471|Pineapple|
+472|Pine Nut|
+473|Pistachio|
+474|Pittsburgh|
+475|Pizza|
+476|Plantain|
+477|Plum|
+478|Poach|
+479|Poblano|
+480|Poker/Game Night|
+481|Pomegranate|
+482|Pomegranate Juice|
+483|Poppy|
+484|Pork|
+485|Pork Chop|
+486|Pork Rib|
+487|Pork Tenderloin|
+488|Port|
+489|Portland|
+490|Potato|
+491|Potato Salad|
+492|Potluck|
+493|Pot Pie|
+494|Poultry|
+495|Poultry Sausage|
+496|Pressure Cooker|
+497|Prosciutto|
+498|Providence|
+499|Prune|
+500|Pumpkin|
+501|Punch|
+502|Purim|
+503|Quail|
+504|Quiche|
+505|Quick and Healthy|
+506|Quick & Easy|
+507|Quince|
+508|Quinoa|
+509|Rabbit|
+510|Rack of Lamb|
+511|Radicchio|
+512|Radish|
+513|Raisin|
+514|Ramadan|
+515|Ramekin|
+516|Raspberry|
+517|Raw|
+518|Red Wine|
+519|Rhode Island|
+520|Rhubarb|
+521|Rice|
+522|Ricotta|
+523|Roast|
+524|Root Vegetable|
+525|Rose|
+526|Rosemary|
+527|Rosh Hashanah/Yom Kippur|
+528|Rub|
+529|Rum|
+530|Rutabaga|
+531|Rye|
+532|Saffron|
+533|Sage|
+534|Sake|
+535|Salad|
+536|Salad Dressing|
+537|Salmon|
+538|Salsa|
+539|Sandwich|
+540|Sandwich Theory|
+541|San Francisco|
+542|Sangria|
+543|Santa Monica|
+544|Sardine|
+545|Sauce|
+546|Sausage|
+547|Saute|
+548|Scallop|
+549|Scotch|
+550|Seafood|
+551|Seattle|
+552|Seed|
+553|Self|
+554|Semolina|
+555|Sesame|
+556|Sesame Oil|
+557|Shallot|
+558|Shavuot|
+559|Shellfish|
+560|Sherry|
+561|Shower|
+562|Shrimp|
+563|Side|
+564|Simmer|
+565|Skewer|
+566|Slow Cooker|
+567|Smoker|
+568|Smoothie|
+569|snack|
+570|snack week|
+571|Snapper|
+572|Sorbet|
+573|Souffle/Meringue|
+574|Soup/Stew|
+575|Sour Cream|
+576|Sourdough|
+577|South Carolina|
+578|Soy|
+579|Soy Free|
+580|Soy Sauce|
+581|Spain|
+582|Sparkling Wine|
+583|Spice|
+584|Spinach|
+585|Spirit|
+586|Spring|
+587|Spritzer|
+588|Squash|
+589|Squid|
+590|Steak|
+591|Steam|
+592|Stew|
+593|Stir-Fry|
+594|St. Louis|
+595|Stock|
+596|St. Patrick's Day|
+597|Strawberry|
+598|Stuffing/Dressing|
+599|Sugar Conscious|
+600|Sugar Snap Pea|
+601|Sukkot|
+602|Summer|
+603|Super Bowl|
+604|Suzanne Goin|
+605|Sweet Potato/Yam|
+606|Swiss Cheese|
+607|Switzerland|
+608|Swordfish|
+609|Taco|
+610|Tailgating|
+611|Tamarind|
+612|Tangerine|
+613|Tapioca|
+614|Tarragon|
+615|Tart|
+616|Tea|
+617|Tennessee|
+618|Tequila|
+619|Tested & Improved|
+620|Texas|
+621|Thanksgiving|
+622|Thyme|
+623|Tilapia|
+624|Tofu|
+625|Tomatillo|
+626|Tomato|
+627|Tortillas|
+628|Tree Nut|
+629|Tree Nut Free|
+630|Triple Sec|
+631|Tropical Fruit|
+632|Trout|
+633|Tuna|
+634|turkey|
+635|Turnip|
+636|Utah|
+637|Valentine's Day|
+638|Vanilla|
+639|Veal|
+640|Vegan|
+641|Vegetable|
+642|Vegetarian|
+643|Venison|
+644|Vermont|
+645|Vermouth|
+646|Vinegar|
+647|Virginia|
+648|Vodka|
+649|Waffle|
+650|Walnut|
+651|Wasabi|
+652|Washington|
+653|Washington, D.C.|
+654|#WasteLess|
+655|Watercress|
+656|Watermelon|
+657|Wedding|
+658|Weelicious|
+659|West Virginia|
+660|Westwood|
+661|Wheat/Gluten-Free|
+662|Whiskey|
+663|White Wine|
+664|Whole Wheat|
+665|Wild Rice|
+666|Windsor|
+667|Wine|
+668|Winter|
+669|Wisconsin|
+670|Wok|
+671|Yellow Squash|
+672|Yogurt|
+673|Yonkers|
+674|Yuca|
+675|Zucchini|

@@ -1,20 +1,31 @@
 package com.datastax.hackaton.graph
 
-import com.datastax.bdp.graph.spark.graphframe._
-import org.apache.spark.sql.{ DataFrame, SparkSession }
-import org.apache.spark.sql.functions._
-import org.apache.spark.sql.types.{ StructField, StructType }
-import org.apache.spark.sql.types._
-import java.time.temporal.ChronoUnit
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
+
+import org.apache.spark.sql.DataFrame
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions.col
+import org.apache.spark.sql.functions.lit
+import org.apache.spark.sql.types.DoubleType
+import org.apache.spark.sql.types.IntegerType
+import org.apache.spark.sql.types.StringType
+import org.apache.spark.sql.types.StructField
+import org.apache.spark.sql.types.StructType
+import org.apache.spark.sql.types.TimestampType
+
+import com.datastax.bdp.graph.spark.graphframe.toSparkSessionFunctions
 import java.time.Instant
+import java.time.temporal.ChronoUnit
 
 /**
- * Data Loading through Spark GraphFrameX
+ * Data Loading through Spark GraphFrameX - Multi-Threaded
  * @ vinod-Jembu (Datastax)
  */
-object graphLoading {
+object graphLoadingWithMultiThread {
   def main(args: Array[String]): Unit = {
-    val graphName = "foodreceipe"
+    //Graph Name
+    val graphName = "foodreceipeThread"
 
     val spark = SparkSession
       .builder
@@ -23,7 +34,8 @@ object graphLoading {
       .getOrCreate()
 
     val g = spark.dseGraph(graphName)
-     //DataFrame
+
+    //DataFrame
     var recipe: DataFrame = null
     var categories: DataFrame = null
     var receipeCategories: DataFrame = null
@@ -61,36 +73,28 @@ object graphLoading {
     }
 
     val start = Instant.now()
-
     println("\nStart Time" + start)
-    
-    //Vertices ( Loaded through local File-System) - With Schema or InferSchema
+
+    //Vertices
     recipe = spark.read.format("csv").option("header", "true").option("delimiter", "|").option("inferSchema", "true").load("file:///Users//vinodjembu//Documents//DSEGraphHackaton//RecipeData//Recipe//recipes.csv")
     categories = spark.read.format("csv").option("header", "true").option("delimiter", "|").schema(categorySchema).load("file:///Users//vinodjembu//Documents//DSEGraphHackaton//RecipeData//Recipe//category.csv")
     incredient = spark.read.format("csv").option("header", "true").option("delimiter", ",").option("inferSchema", "true").load("file:///Users//vinodjembu//Documents//DSEGraphHackaton//RecipeData//Recipe//incredients.csv")
 
-    //Vertices ( Loaded through DSEFS)
-    //recipe = spark.read.format("csv").option("header", "true").option("delimiter", "|").option("inferSchema", "true").load("dsefs:///tmp//recipes.csv")
-    // categories = spark.read.format("csv").option("header", "true").option("delimiter", "|").schema(categorySchema).load("dsefs:///tmp//category.csv")
-    // incredient = spark.read.format("csv").option("header", "true").option("delimiter", ",").option("inferSchema", "true").load("dsefs:///tmp//incredients.csv")
-
-    //EDGES ( Loaded through local File-System)
+    //EDGES
     receipeIncredients = spark.read.format("csv").option("header", "true").option("delimiter", ",").schema(receipeIncredientsSchema).load("file:///Users//vinodjembu//Documents//DSEGraphHackaton//RecipeData//Recipe//incredient_receipe.csv")
     receipeCategories = spark.read.format("csv").option("header", "true").option("delimiter", "|").option("inferSchema", "true").load("file:///Users//vinodjembu//Documents//DSEGraphHackaton//RecipeData//Recipe//receipecategories.csv")
 
-    //EDGES ( Loaded through DSEFS)
-    //receipeIncredients = spark.read.format("csv").option("header", "true").option("delimiter", ",").schema(receipeIncredientsSchema).load("dsefs:///tmp//incredient_receipe.csv")
-    //receipeCategories = spark.read.format("csv").option("header", "true").option("delimiter", "|").option("inferSchema", "true").load("dsefs:///tmp//receipecategories.csv")
+    //Build Vertices Map
+    val vertices = Map("recipe" -> recipe, "categories" -> categories, "incredient" -> incredient)
 
-    // Write out vertices
-    println("\nWriting recipes vertices")
-    g.updateVertices(recipe.withColumn("~label", lit("recipe")))
+    //Iterate Each Map create as Separate Thread
+    vertices.foreach { a: (String, DataFrame) =>
+      val key = a._1
+      val value = a._2
 
-    println("\nWriting category vertices")
-    g.updateVertices(categories.withColumn("~label", lit("categories")))
-
-    println("\nWriting incredient vertices")
-    g.updateVertices(incredient.withColumn("~label", lit("incredient")))
+      var verticeThread = new UpdateVerticesThread(spark, value, key)
+      verticeThread.start()
+    }
 
     // Write out edges
     println("\nWriting receipe-Category edges")
@@ -102,10 +106,9 @@ object graphLoading {
     g.updateEdges(receipeIncredientsEdges.select(g.idColumn(col("srcLabel"), col("recipe_id")) as "src", g.idColumn(col("dstLabel"), col("incredient_name")) as "dst", col("edgeLabel") as "~label", col("comment") as "comment", col("qty") as "qty", col("unit") as "unit"))
 
     val end = Instant.now()
-
     println("Ending Time" + end)
-    val diffInSecs = ChronoUnit.SECONDS.between(start, end)
     
+    val diffInSecs = ChronoUnit.SECONDS.between(start, end)
     println("\n Total Time taken " + diffInSecs)
 
     System.exit(0)

@@ -1,0 +1,34 @@
+//Create Graph
+system.graph('foodreceipe').create()
+
+// Property keys
+schema.propertyKey('recipe_id').Int().ifNotExists().create()
+schema.propertyKey('title').Text().ifNotExists().create()
+schema.propertyKey('sodium').Text().ifNotExists().create()
+schema.propertyKey('date').Text().ifNotExists().create()
+schema.propertyKey('calories').Text().ifNotExists().create()
+schema.propertyKey('descr').Text().ifNotExists().create()
+schema.propertyKey('protein').Text().ifNotExists().create()
+schema.propertyKey('fat').Text().ifNotExists().create()
+schema.propertyKey('rating').Text().ifNotExists().create()
+
+
+schema.propertyKey('category_id').Int().ifNotExists().create()
+schema.propertyKey('category').Text().ifNotExists().create()
+schema.propertyKey('incredient_name').Text().ifNotExists().create()
+schema.propertyKey('comment').Text().ifNotExists().create()
+schema.propertyKey('qty').Text().ifNotExists().create()
+schema.propertyKey('unit').Text().ifNotExists().create()
+
+// Vertex labels
+schema.vertexLabel('recipe').partitionKey('recipe_id').properties('title', 'sodium', 'date', 'calories', 'descr','protein','fat','rating').ifNotExists().create()
+schema.vertexLabel('categories').partitionKey('category_id').properties('category').ifNotExists().create()
+schema.vertexLabel('incredient').partitionKey('incredient_name').ifNotExists().create()
+
+// Edge labels
+schema.edgeLabel('avaialbleBy').single().connection('recipe', 'categories').ifNotExists().create()
+
+schema.edgeLabel("contains").single().properties("comment","qty","unit").create()
+schema.edgeLabel('contains').single().connection('recipe','incredient').ifNotExists().create()
+
+
